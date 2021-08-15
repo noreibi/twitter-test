@@ -49,6 +49,8 @@ header nav ul li button {
   border-radius: 50%;
   border-width: 0px;
   background-color: white;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 header nav ul li button:hover {

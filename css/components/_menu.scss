@@ -34,6 +34,8 @@ header{
                     border-radius: 50%;
                     border-width: 0px;
                     background-color: white;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                     &:hover{
                         background-color: #ededed;
                     }
