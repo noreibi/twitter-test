@@ -1,16 +1,16 @@
 body {
+  margin: 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 185px auto;
-      grid-template-columns: 185px auto;
+  -ms-grid-columns: 320px auto;
+  grid-template-columns: 320px auto;
 }
 
-header {
+#main-header {
   border-right: 0.5px solid #cacaca;
   min-height: 100vh;
 }
-
-header nav ul {
+#main-header nav ul {
   list-style: none;
   -webkit-margin-before: 0px;
           margin-block-start: 0px;
@@ -19,8 +19,7 @@ header nav ul {
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
 }
-
-header nav ul li {
+#main-header nav ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -29,21 +28,17 @@ header nav ul li {
           justify-content: flex-end;
   margin: 4px 4px;
 }
-
-header nav ul li:first-child button:hover {
+#main-header nav ul li:first-child button:hover {
   background-color: lightblue;
 }
-
-header nav ul li:last-child button {
+#main-header nav ul li:last-child button {
   background-color: #108ce5;
   color: white;
 }
-
-header nav ul li:last-child button:hover {
+#main-header nav ul li:last-child button:hover {
   background-color: #0d609c;
 }
-
-header nav ul li button {
+#main-header nav ul li button {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -52,8 +47,31 @@ header nav ul li button {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
-header nav ul li button:hover {
+#main-header nav ul li button:hover {
   background-color: #ededed;
 }
-/*# sourceMappingURL=style.css.map */
+
+#content {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr));
+  grid-auto-rows: 15rem;
+  gap: 8px;
+}
+@media screen and (max-width: 1400px) {
+  #content aside {
+    display: none;
+  }
+}
+#content .featured {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+#content main {
+  border-right: 1px solid #cacaca;
+  min-height: 100vh;
+}
+#content aside {
+  min-height: 100vh;
+  background-color: yellow;
+}
