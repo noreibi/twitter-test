@@ -1,0 +1,44 @@
+header{
+    border-right: 0.5px solid rgb(202, 202, 202);
+    min-height: 100vh;
+    nav{
+        ul{
+            list-style: none;
+            margin-block-start: 0px;
+            margin-block-end: 0px;
+            padding-inline-start: 0px;
+            li{//TODO: al principio voy a dejar un boton
+                display: flex;
+                justify-content: flex-end;
+                margin: 4px 4px;
+
+                &:first-child {
+                    button{
+                        &:hover{
+                            background-color: lightblue;
+                        }
+                    }
+                }
+                &:last-child {
+                    button{
+                        background-color: #108ce5;
+                        color: white;
+                        &:hover{
+                            background-color: rgb(13, 96, 156);
+                        }
+                    }
+                }
+                button{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    border-width: 0px;
+                    background-color: white;
+                    &:hover{
+                        background-color: #ededed;
+                    }
+                }
+            }
+        }
+    }
+}
