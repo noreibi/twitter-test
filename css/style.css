@@ -2,8 +2,8 @@ body {
   margin: 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 320px auto;
-      grid-template-columns: 320px auto;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
 }
 
 #main-header {
@@ -55,6 +55,7 @@ body {
   background-color: white;
   text-overflow: ellipsis;
   overflow: hidden;
+  margin-right: 120px;
 }
 
 #main-header nav ul li button:hover {
