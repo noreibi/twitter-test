@@ -1,0 +1,73 @@
+@import './mixins';
+#articles{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: calc(100vh - 51px);
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    article{
+        padding: 16px;
+        display: grid;
+        grid-template-columns: 48px 506px;
+        gap: 12px;
+        background-color: white;
+        &:hover{
+            background-color: rgb(239, 239, 239);
+        }
+        img{
+            object-fit: cover;
+            width: 504px;
+            height: 304px;
+            border-radius: 20px;
+            &.profile-pic{
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+            }
+        }
+       div.tweet-bar{
+           display: flex;
+           div{
+               margin-right: auto;
+               &.comment{
+                    color: grey;
+                    &:hover{
+                        color: #108ce5;
+                    }
+                }
+                &.like{
+                    color: grey;
+                    &:hover{
+                        color:red;
+                    }
+                }
+                &.retweet{
+                    color: grey;
+                    &:hover{
+                        color: green;
+                    }
+                }
+                &.share{
+                    color: grey;
+                    &:hover{
+                        color:purple;
+                    }
+                }
+               button{
+                   @include mi-boton-redondo;
+                   color: inherit;
+                   width: 34px;
+                   height: 34px;
+                   &:hover{
+                        background-color: lightblue;
+                   }
+                   
+               }
+           }
+       }
+    }
+}

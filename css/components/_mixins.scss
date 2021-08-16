@@ -1,0 +1,12 @@
+@mixin mi-boton-redondo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-width: 0px;
+    background-color: white;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    &:hover{
+        background-color: #ededed;
+    }
+}

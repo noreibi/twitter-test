@@ -1,8 +1,7 @@
 #content{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 22rem), 1fr) ); //repeat(auto-fill, minmax(15rem, 1fr))
-    grid-auto-rows: 15rem; //quiero investigarlo
-    gap: 8px;
+    grid-template-columns: repeat(auto-fill, 300px ); // min(100%, 22rem)
+    grid-auto-rows: 300px; //quiero investigarlo
 
     @media screen and (max-width: 1400px) {
         aside{
@@ -20,6 +19,5 @@
     }
     aside{
         min-height: 100vh;
-        background-color: yellow;
     }
 }

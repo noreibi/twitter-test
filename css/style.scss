@@ -1,3 +1,11 @@
 @import './components/layout';
 @import './components/menu';
 @import './components/content';
+@import './components/superiorband';
+@import './components/articles';
+@import './components/links';
+@import './components/search';
+
+* {
+    font-family: apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
